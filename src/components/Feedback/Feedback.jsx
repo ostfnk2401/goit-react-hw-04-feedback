@@ -1,6 +1,7 @@
 import React from "react";
 import { FeedbackForm, FeedbackWrapper } from './Feedback.styled.jsx';
-import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions.jsx';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions.jsx';
+import { Statistics } from "./Statistics/Statistics.jsx";
 
 
 export class Feedback extends React.Component {
