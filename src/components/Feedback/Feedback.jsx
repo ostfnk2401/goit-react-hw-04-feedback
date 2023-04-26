@@ -1,6 +1,6 @@
 import React from "react";
 import { FeedbackForm, FeedbackWrapper } from './Feedback.styled.jsx';
-import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions.jsx';
+
 
 export class Feedback extends React.Component {
     state = {
@@ -20,7 +20,7 @@ export class Feedback extends React.Component {
         return votes.reduce((acc, vote) => acc + vote, 0);
     }
 
-    countFeedbackPercent = () => {
+    countPositiveFeedbackPercentage = () => {
         if (this.state.good === 0) return 0;
         return +((this.state.good / this.countTotalFeedback()) * 100).toFixed(1);
     }
@@ -29,7 +29,7 @@ export class Feedback extends React.Component {
         const options = Object.keys(this.state);
         const { good, neutral, bad } = this.state;
         const total = this.countTotalFeedback();
-        const positiveFeedbackPercent = this.countFeedbackPercent();
+        const positiveFeedbackPercent = this.countPositiveFeedbackPercentage();
 
         return (
             <FeedbackForm>
