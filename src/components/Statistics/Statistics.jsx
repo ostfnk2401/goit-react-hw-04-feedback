@@ -7,8 +7,8 @@ export const Statistics = ({ good = 0, neutral = 0, bad = 0, total = 0, positive
       <StatisticsItem><Stats prop={'good'}></Stats> Good: {good}</StatisticsItem>
       <StatisticsItem><Stats prop={'neutral'}></Stats>Neutral: {neutral}</StatisticsItem>
       <StatisticsItem><Stats prop={'bad'}></Stats>Bad: {bad}</StatisticsItem>
-      <StatisticsItem>&#128064; Total: {total}</StatisticsItem>
-      <StatisticsItem>&#127752; PositiveFeedback: {positivePercentage}%</StatisticsItem>
+      <StatisticsItem>&#127775; Total: {total}</StatisticsItem>
+      <StatisticsItem>&#127989; PositiveFeedback: {positivePercentage}%</StatisticsItem>
     </StatisticsList> 
 );
 

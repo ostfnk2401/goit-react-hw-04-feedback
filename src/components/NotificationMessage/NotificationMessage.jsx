@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const NotificationMessage = ({ message }) => {
     return (<Notify>
-        &#127770; {message}
+        &#127773; {message}
     </Notify>)
 }
 

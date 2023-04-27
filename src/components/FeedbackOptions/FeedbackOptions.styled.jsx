@@ -21,10 +21,10 @@ box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.2);
 background-color: ${props =>{
     switch (props.prop) {
         case 'good':
-            return `#C4DFAA`;
+            return `#469916`;
             case 'bad':
-            return `#FF9494`;
+            return `#b62932`;
         default:
-            return `#FFE6E6`;
+            return `#e5ecee`;
             }}}
 `
