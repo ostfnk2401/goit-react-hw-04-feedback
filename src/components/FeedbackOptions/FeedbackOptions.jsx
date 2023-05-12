@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FeedbackList, FeedbackItem, FeedbackButton } from './FeedbackOptions.styled';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionClick = (option) => {
@@ -35,5 +35,3 @@ FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-
-export default FeedbackOptions;
