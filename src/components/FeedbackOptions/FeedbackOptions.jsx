@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { FeedbackList, FeedbackItem, FeedbackButton } from './FeedbackOptions.styled';
 
  export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const [selectedOption, setSelectedOption] = useState('');
+  // const [selectedOption, setSelectedOption] = useState('');
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    onLeaveFeedback(option);
-  };
+  // const handleOptionClick = (option) => {
+  //   setSelectedOption(option);
+  //   onLeaveFeedback(option);
+  // };
 
   return (
     <FeedbackList>
@@ -19,8 +19,7 @@ import { FeedbackList, FeedbackItem, FeedbackButton } from './FeedbackOptions.st
             <FeedbackButton
               type='button'
               prop={option}
-              onClick={() => handleOptionClick(option)}
-              selected={option === selectedOption}
+              onClick={() => onLeaveFeedback(option)}
             >
               {buttonOption}
             </FeedbackButton>
