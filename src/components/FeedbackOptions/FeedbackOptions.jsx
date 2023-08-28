@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackList, FeedbackItem, FeedbackButton } from './FeedbackOptions.styled';
+import {
+  FeedbackList,
+  FeedbackItem,
+  FeedbackButton,
+} from './FeedbackOptions.styled';
 
- export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  // const [selectedOption, setSelectedOption] = useState('');
-
-  // const handleOptionClick = (option) => {
-  //   setSelectedOption(option);
-  //   onLeaveFeedback(option);
-  // };
-
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <FeedbackList>
-      {options.map((option) => {
+      {options.map(option => {
         const buttonOption = option.charAt(0).toUpperCase() + option.slice(1);
         return (
           <FeedbackItem key={option}>
             <FeedbackButton
-              type='button'
+              type="button"
               prop={option}
               onClick={() => onLeaveFeedback(option)}
             >
